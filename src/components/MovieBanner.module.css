@@ -7,18 +7,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    box-shadow: #E2DEDB 6px 6px 6px;
-    transition: all .6s;
-}
-
-.card:hover {
     box-shadow: #1E1C1F 6px 6px 6px;
+    transition: all .6s;
 }
 
 .card p {
     width: 80%;
     margin: 10px 0;
     font-size: 1.5rem;
+    text-align: justify;
 }
 
 .contentWraper {
@@ -72,4 +69,5 @@
 .trailer:hover {
     transition: all 0.5s;
     background-color: #C61F2D;
+    cursor: pointer;
 }

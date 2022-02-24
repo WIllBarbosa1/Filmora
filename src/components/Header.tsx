@@ -9,7 +9,7 @@ const Header = (props: Props) => {
         <header className={styles.header}>
             <div className={styles.logoWreper}>
                 <img className={styles.ico} src={ico} alt="popcorn" />
-                <h1 className={styles.title}>Filmora</h1>
+                <Link className={styles.title} to='/'>Filmora</Link>
             </div>
             <nav>
                 <Link className={styles.link} to={'/'}>Home</Link>

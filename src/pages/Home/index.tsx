@@ -16,9 +16,10 @@ const Home = (props: Props) => {
 
   return (
     <div className="container">
-      {movies.length > 0 &&
-        movies.map((movie) => <MovieCard movie={movie} key={movie.id} />
-        )
+      <h2 className='title'>Filmes</h2>
+      {movies.length > 0
+        ? movies.map((movie) => <MovieCard movie={movie} key={movie.id} />)
+        : <img className='loading' src='https://cdn.dribbble.com/users/1015854/screenshots/3625317/day289_popcorn.gif' alt='loading'></img>
       }
     </div>
   )
