@@ -1,0 +1,38 @@
+.header {
+    border-bottom: solid 2px #000;
+    background: #E2DEDB;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.link {
+    margin: 0 12px;
+    padding: 5px;
+    color: #E2DEDB;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border: 2px solid #1E1C1F;
+    background-color: #1E1C1F;
+}
+
+.link:hover {
+    transition: all 0.5s;
+    border: 2px solid #FFE443;
+    box-shadow: #FFE443 2px 4px 5px;
+}
+
+.logoWreper {
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    font-size: 3rem;
+}
+
+.ico {
+    height: 100px;
+}
