@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import Favorites from '../../components/Favorites';
 import { IMovie } from '../../interfaces/IMovie';
 
 type Props = {}
@@ -18,12 +19,10 @@ const Favoritos = (props: Props) => {
     return (
         <div className='containerFav'>
             <div className='content'>
-                <h2>Favoritos</h2>
-                {myFavMovies.length > 0 && myFavMovies.map((movie) =>
-                    <div key={movie.id}>
-                        <h3>{movie.nome}</h3>
-                    </div>
-                )}
+                <h2 className='titleFav'>Favoritos</h2>
+                {myFavMovies.length > 0
+                    ? myFavMovies.map((movie) => <Favorites movie={movie} key={movie.id} refresh={(movies: IMovie[]) => setMyFavMovies(movies)} />)
+                    : <h3>Sem favoritos.</h3>}
             </div>
         </div>
     )

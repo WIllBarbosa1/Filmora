@@ -41,6 +41,10 @@
     width: 50vw;
 }
 
+.titleFav {
+    font-size: 3rem;
+}
+
 .title {
     margin-bottom: 20px;
     padding: 20px;

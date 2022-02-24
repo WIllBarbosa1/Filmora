@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    width: 80%;
+    height: 5vh;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 10px;
+    border: 2px solid #1E1C1F;
+}
+
+.button {
+    height: 80%;
+    margin: 0 5px;
+    padding: 3px;
+    border: 2px solid #1E1C1F;
+    color: #fff;
+    font-size: larger;
+    text-decoration: none;
+    background-color: #1E1C1F;
+    transition: all 0.6s;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: #C61F2D;
+}
