@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react';
 import MovieCard from '../../components/MovieCard';
 import { IMovie } from '../../interfaces/IMovie';
 import api from '../../services/api';
@@ -11,7 +11,7 @@ const Home = (props: Props) => {
 
   useEffect(() => {
     api.get('/').then(({ data }) => setMovies(data));
-  }, [])
+  }, []);
 
 
   return (

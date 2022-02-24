@@ -12,7 +12,8 @@ const Header = (props: Props) => {
                 <h1 className={styles.title}>Filmora</h1>
             </div>
             <nav>
-                <Link className={styles.link} to={'/'}>Favoritos</Link>
+                <Link className={styles.link} to={'/'}>Home</Link>
+                <Link className={styles.link} to={'/favoritos'}>Favoritos</Link>
             </nav>
         </header>
     )

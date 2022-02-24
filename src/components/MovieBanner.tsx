@@ -1,13 +1,11 @@
-import { Link } from 'react-router-dom';
 import { IMovie } from '../interfaces/IMovie';
-import styles from './MovieCard.module.css';
+import styles from './MovieBanner.module.css';
 
 interface Props {
     movie: IMovie;
 }
 
-const MovieCard = ({ movie }: Props) => {
-
+const MovieBanner = ({ movie }: Props) => {
     return (
         <div className={styles.card}>
             <div className={styles.contentWraper}>
@@ -17,9 +15,10 @@ const MovieCard = ({ movie }: Props) => {
                 </div>
                 <p> <span className={styles.sinopse}>Sinopse: </span> {movie.sinopse}</p>
             </div>
-            <Link className={styles.trailer} to={`/filme/${movie.id}`} >Acessar</Link>
+            <a className={styles.trailer} href={`https://www.youtube.com/results?search_query=trailer+${movie.nome}`} target='_blank' rel="noreferrer">Trailer</a>
+            <button className={styles.trailer}>Favoritar</button>
         </div>
     )
 }
 
-export default MovieCard
+export default MovieBanner;
