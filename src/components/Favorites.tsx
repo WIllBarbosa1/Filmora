@@ -1,4 +1,4 @@
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { IMovie } from '../interfaces/IMovie';
 import styles from './Favorites.module.css';
 
