@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { useState } from 'react';
+import { toast } from 'react-toastify';
 import { IMovie } from '../interfaces/IMovie';
 import styles from './MovieBanner.module.css';
 
@@ -32,10 +33,12 @@ const MovieBanner = ({ movie }: Props) => {
             localStorage.setItem('movies', JSON.stringify(newFav));
             setMyFavMovies(newFav);
             setHasMovie(false);
+            toast.success('Filme desfavoritado.');
         } else {
             MyFavMovies.push(movie);
             localStorage.setItem('movies', JSON.stringify(MyFavMovies));
             setHasMovie(true);
+            toast.success('Filme favoritado.');
         }
 
     }

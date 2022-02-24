@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify';
 import { IMovie } from '../interfaces/IMovie';
 import styles from './Favorites.module.css';
 
@@ -14,6 +15,7 @@ const Favorites = ({ movie, refresh }: Props) => {
         const saveMovies: IMovie[] = myMovies ? JSON.parse(myMovies) : [];
         const newFav = saveMovies.filter((favMovie) => movie.id !== favMovie.id);
         localStorage.setItem('movies', JSON.stringify(newFav));
+        toast.success('Filme desfavoritado!')
         refresh(newFav);
     }
 

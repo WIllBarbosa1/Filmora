@@ -37,6 +37,36 @@
     background-size: cover;
 }
 
+.containerNotFound {
+    padding: 4% 0;
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-image: url('./assets/nf.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.containerNotFoundError {
+    animation: 10s ease-in 1s infinite slidein;
+}
+
+@keyframes slidein {
+    0%  { margin-left: 50%;}
+    25% { margin-left: 0%; }
+    50% { margin-left: 0%; transform: rotateY(3.142rad);}
+    100%{ margin-left: 50%;}
+}
+
+.erroTitle {
+    color: #E2DEDB;
+    margin: 0 auto;
+}
+
 .loading {
     width: 50vw;
 }
